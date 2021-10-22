@@ -16,7 +16,7 @@ https://whimsical.com/vibes-H8bohRqHUrZkrcJzrKGs5h
 - Color Switcher
 - Full screen post 
 
-#Schedule
+# Schedule
 
 | Day | Objective | Status |
 |    :---:     |     :---:      |     :---:     |
@@ -28,6 +28,7 @@ https://whimsical.com/vibes-H8bohRqHUrZkrcJzrKGs5h
 | 10/27 | Polishing/PMVP | Incomplete |
 | 10/29 | Presentations | Incomplete |
 
+# TimeFrames
 |Goal| Time Expected| Actual Time|
 | :---: | :---: | :---: |
 |Pseudo code| 2hrs | |
