@@ -4,6 +4,7 @@ Social media application focusing on positivity.
 ## WireFrame
 https://whimsical.com/vibes-H8bohRqHUrZkrcJzrKGs5h
 ![image](https://user-images.githubusercontent.com/90221535/138517449-344f393f-543d-4450-b617-2eb3d7882788.png)
+
 ## MVP
 - Post Page
 - About
