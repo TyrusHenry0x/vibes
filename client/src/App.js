@@ -1,4 +1,4 @@
-
+import { Link, Route } from 'react-router-dom';
 import './App.css';
 
 function App() {
@@ -10,18 +10,18 @@ function App() {
       </div>
 
       <div className="navbar">
-        <a href="#" className="nav-link">
+        <Link to="/" exact className="nav-link">
           <span className="nav-button">Home</span>
-        </a>
-        <a href="#" className="nav-link">
+        </Link>
+        <Link to="/new-vibe" className="nav-link">
           <span className="nav-button">New Vibe</span>
-        </a>
-        <a href="#" className="nav-link">
+        </Link>
+        <Link to="/about" className="nav-link">
           <span className="nav-button">About</span>
-        </a>
-        <a href="#" className="nav-link">
+        </Link>
+        <Link to="/contact" className="nav-link">
           <span className="nav-button">Contact Me</span>
-        </a>
+        </Link>
       </div>
 
     </div>
