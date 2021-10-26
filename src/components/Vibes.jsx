@@ -1,9 +1,9 @@
 
-export const Vibes = (params) => {
+export const Vibes = (props) => {
   return (
     <div className="post">
-      <h1><b>{params.vibe.fields.Name}</b></h1>
-      <p>{params.vibe.fields.text}</p>
+      <h1><b>{props.vibe.fields.Name}</b></h1>
+      <p>{props.vibe.fields.text}</p>
     </div>
   )
 }

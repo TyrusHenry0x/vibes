@@ -28,15 +28,16 @@ function App() {
 
       <div className="header"><h1 id="vibes">Vibes</h1></div>
 
-      <Route path="/" exact>
-        {vibes.map((vibes) => {
-          <Vibes
-            Name={vibes.fields.Name}
-            Text={vibes.fields.text}
-          />
-        })}
-      </Route>
 
+      <Route path="/" exact>
+        {vibes.map((vibe) => (
+
+          <Vibes
+            vibe={vibe}
+          />
+
+        ))}
+      </Route>
 
       <Sidebar />
 
