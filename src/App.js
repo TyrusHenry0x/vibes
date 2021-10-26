@@ -39,7 +39,7 @@ function App() {
   return (
     <div className="App">
 
-      <div className="header"><h1 id="vibes">Vibes</h1></div>
+      {/* <div className="header"><h1 id="vibes">Vibes</h1></div> */}
 
 
       <Route path="/" exact>
@@ -52,18 +52,29 @@ function App() {
       </Route>
 
       <Route path="/new">
-        <form className="newVibe" onSubmit={handleSubmit}>
-          <label htmlFor="username">User:</label>
-          <input
-            type="text"
-            id="username"
-            value={username}
-            onChange={(ev) => SetName(ev.target.value)}
-          />
-
-        </form>
+        <div>
+          <form className="newVibe" onSubmit={handleSubmit}>
+            <label htmlFor="username">User:</label>
+            <input
+              type="text"
+              id="username"
+              value={Name}
+              onChange={(ev) => SetName(ev.target.value)}
+            />
+            <label htmlFor="text"></label>
+            <input
+              type="text"
+              id="text"
+              placeholder="Whats the Vibe for today?"
+              value={text}
+              onChange={(ev) => setText(ev.target.value)}
+            />
+            <input type="submit" value="Vibe" />
+          </form>
+        </div>
       </Route>
-      <Sidebar />
+
+      {/* <Sidebar /> */}
 
     </div>
   );
