@@ -11,7 +11,8 @@ const API_URL = 'https://api.airtable.com/v0/apppfkjVKyYXyDqYM/Table%201?api_key
 function App() {
   const [vibes, setVibes] = useState([])
   const [toggleFetch, setToggleFetch] = useState(true)
-
+  const [Name, SetName] = useState('')
+  const [text, setText] = useState('')
   useEffect(() => {
     const getVibes = async () => {
       const resp = await axios.get(API_URL)
@@ -20,8 +21,20 @@ function App() {
     }
     getVibes()
   }, [toggleFetch])
+  const handleSubmit = async (ev) => {
+    ev.preventDefault()
 
+    console.log('form submitted')
 
+    const newVibe = {
+      Name,
+      text,
+    }
+
+    console.log(newVibe)
+    await axios.post('https://api.airtable.com/v0/apppfkjVKyYXyDqYM/Table%201?api_key=key5SMVCWBp7tBUcr', newVibe)
+    setToggleFetch(!toggleFetch)
+  }
 
   return (
     <div className="App">
@@ -31,7 +44,6 @@ function App() {
 
       <Route path="/" exact>
         {vibes.map((vibe) => (
-
           <Vibes
             vibe={vibe}
           />
@@ -39,6 +51,18 @@ function App() {
         ))}
       </Route>
 
+      <Route path="/new">
+        <form className="newVibe" onSubmit={handleSubmit}>
+          <label htmlFor="username">User:</label>
+          <input
+            type="text"
+            id="username"
+            value={username}
+            onChange={(ev) => SetName(ev.target.value)}
+          />
+
+        </form>
+      </Route>
       <Sidebar />
 
     </div>
