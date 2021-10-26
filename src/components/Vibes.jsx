@@ -1,3 +1,4 @@
+
 export const Vibes = (params) => {
   return (
     <div className="post">

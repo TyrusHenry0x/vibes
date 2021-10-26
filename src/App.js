@@ -10,7 +10,7 @@ const API_URL = 'https://api.airtable.com/v0/apppfkjVKyYXyDqYM/Table%201?api_key
 
 function App() {
   const [vibes, setVibes] = useState([])
-  const [toggleFetch, setToggleFetch] = useState(false)
+  const [toggleFetch, setToggleFetch] = useState(true)
 
   useEffect(() => {
     const getVibes = async () => {
@@ -29,11 +29,12 @@ function App() {
       <div className="header"><h1 id="vibes">Vibes</h1></div>
 
       <Route path="/" exact>
-        {vibes.map((vibe) => (
-          <Link to={`/vibe/${vibe.id}`}>
-            <li key={vibe.id}>{vibe.fields.Name}</li>
-          </Link>
-        ))}
+        {vibes.map((vibes) => {
+          <Vibes
+            Name={vibes.fields.Name}
+            Text={vibes.fields.text}
+          />
+        })}
       </Route>
 
 
