@@ -22,7 +22,7 @@ https://whimsical.com/vibes-H8bohRqHUrZkrcJzrKGs5h
 | Day | Objective | Status |
 |    :---:     |     :---:      |     :---:     |
 | 10/22|ReadMe Finished |Complete|
-| 10/22 | Project Approved |  Incomlete |
+| 10/22 | Project Approved |  Complete |
 | 10/23 - 10/24 | Html/JS/React |  Incomplete |
 | 10/25 - 10/26 | Styling/Css | Incomplete |
 | 10/26 | Checking MVP | Incomplete |
