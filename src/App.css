@@ -57,3 +57,9 @@
 .row #title {
   flex: 70%;
 }
+
+.newpage {
+  background-color: red;
+  display: flex;
+  
+}
