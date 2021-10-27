@@ -1,4 +1,4 @@
-import { Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import SideBarData from './SidebarData';
 
 
@@ -11,7 +11,7 @@ const Sidebar = () => {
           return (
             <Link key={key}
               className="row"
-              id={window.location.pathname == val.link ? "active" : ""}
+              id={window.location.pathname === val.link ? "active" : ""}
               onClick={() => {
                 window.location.pathname = val.link;
               }}

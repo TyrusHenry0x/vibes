@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { Link, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import './App.css';
 import Sidebar from './components/Sidebar';
 import Vibes from './components/Vibes';
@@ -13,6 +13,7 @@ function App() {
   const [toggleFetch, setToggleFetch] = useState(true)
   const [Name, SetName] = useState('')
   const [text, setText] = useState('')
+
   useEffect(() => {
     const getVibes = async () => {
       const resp = await axios.get(API_URL)
@@ -21,14 +22,17 @@ function App() {
     }
     getVibes()
   }, [toggleFetch])
+
   const handleSubmit = async (ev) => {
     ev.preventDefault()
 
     console.log('form submitted')
 
     const newVibe = {
-      Name,
-      text,
+      fields: {
+        Name,
+        text,
+      }
     }
 
     console.log(newVibe)
@@ -43,18 +47,23 @@ function App() {
 
 
       <Route path="/" exact>
-        {vibes.map((vibe) => (
-          <Vibes
-            vibe={vibe}
-          />
 
-        ))}
+        <div className="homepage">
+          {vibes.map((vibe) => (
+            <Vibes
+              vibe={vibe}
+            />
+
+          ))}
+        </div>
+
       </Route>
 
       <Route path="/new">
-        <div>
+
+        <div className="newpage">
           <form className="newVibe" onSubmit={handleSubmit}>
-            <label htmlFor="username">User:</label>
+            <label htmlFor="Name">User:</label>
             <input
               type="text"
               id="username"
@@ -72,9 +81,10 @@ function App() {
             <input type="submit" value="Vibe" />
           </form>
         </div>
+
       </Route>
 
-      {/* <Sidebar /> */}
+      <Sidebar />
 
     </div>
   );
