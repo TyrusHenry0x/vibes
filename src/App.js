@@ -19,7 +19,6 @@ function App() {
   useEffect(() => {
     const getVibes = async () => {
       const resp = await axios.get(API_URL)
-      console.log(resp.data.records)
       setVibes(resp.data.records)
     }
     getVibes()

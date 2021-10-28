@@ -6,8 +6,6 @@ const NewVibe = () => {
   const handleSubmit = async (ev) => {
     ev.preventDefault()
 
-    console.log('form submitted')
-
     const newVibe = {
       fields: {
         Name,
@@ -15,7 +13,6 @@ const NewVibe = () => {
       }
     }
 
-    console.log(newVibe)
     await axios.post('https://api.airtable.com/v0/apppfkjVKyYXyDqYM/Table%201?api_key=key5SMVCWBp7tBUcr', newVibe)
     setToggleFetch(!toggleFetch)
   }

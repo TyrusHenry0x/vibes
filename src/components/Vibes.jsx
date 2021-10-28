@@ -1,10 +1,16 @@
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
+import axios from "axios"
+
 
 export const Vibes = (props, toggleFetch, setToggleFetch) => {
 
-  // const API_URL = 'https://api.airtable.com/v0/apppfkjVKyYXyDqYM/Table%201?api_key=key5SMVCWBp7tBUcr/'
+  const params = useParams()
+
+  const API_URL = 'https://api.airtable.com/v0/apppfkjVKyYXyDqYM/Table%201?api_key=key5SMVCWBp7tBUcr/'
+
   // const deleteVibe = async () => {
-  //   await axios.delete(API_URL + `&records[]=${records}`)
+  //   // await axios.delete(API_URL + `/${params.id}`)
+  //   await axios.delete(API_URL, { records: }).base
   //   setToggleFetch(!toggleFetch)
   // }
 
@@ -14,6 +20,7 @@ export const Vibes = (props, toggleFetch, setToggleFetch) => {
       <p>{props.vibe.fields.text}</p>
 
       <Link to={`/edit-vibe/${props.vibe.id}`}><button>Edit</button></Link>
+      {/* <button onClick={deleteVibe}>Delete</button> */}
     </div>
   )
 }

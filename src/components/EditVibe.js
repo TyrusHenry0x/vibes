@@ -15,7 +15,7 @@ const EditVibe = ({ vibes }) => {
       }
     }
 
-    await axios.put(API_URL + `/${params.id}`, updateVibe)
+    await axios.put(API_URL + `/${params.id}`, { updateVibe })
   }
   const [text, setText] = useState('')
 
