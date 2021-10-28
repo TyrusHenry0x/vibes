@@ -8,6 +8,7 @@ import Vibes from './components/Vibes';
 // import AboutPage from './components/AboutPage';
 import EditVibe from './components/EditVibe';
 import AboutPage from './components/AboutPage';
+import Contact from './components/Contact';
 
 const API_URL = 'https://api.airtable.com/v0/apppfkjVKyYXyDqYM/Table%201?api_key=key5SMVCWBp7tBUcr'
 
@@ -61,6 +62,11 @@ function App() {
         <Route path="/about">
           <AboutPage />
         </Route>
+
+        <Route path="/support">
+          <Contact />
+        </Route>
+
       </div>
     </div >
   );

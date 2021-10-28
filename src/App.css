@@ -5,6 +5,11 @@
 /* * {
   box-sizing: border-box;
 } */
+body {
+  border: none;
+  margin: 0px;
+  padding: 0;
+}
 
 .header {
   position: fixed;
