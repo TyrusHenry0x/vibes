@@ -1,9 +1,8 @@
-import axios from "axios"
 import { Link } from "react-router-dom"
 
 export const Vibes = (props, toggleFetch, setToggleFetch) => {
 
-  const API_URL = 'https://api.airtable.com/v0/apppfkjVKyYXyDqYM/Table%201?api_key=key5SMVCWBp7tBUcr/'
+  // const API_URL = 'https://api.airtable.com/v0/apppfkjVKyYXyDqYM/Table%201?api_key=key5SMVCWBp7tBUcr/'
   // const deleteVibe = async () => {
   //   await axios.delete(API_URL + `&records[]=${records}`)
   //   setToggleFetch(!toggleFetch)

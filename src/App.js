@@ -5,16 +5,15 @@ import './App.css';
 import NewVibe from './components/NewVibe';
 import Sidebar from './components/Sidebar';
 import Vibes from './components/Vibes';
-import AboutPage from './components/AboutPage';
+// import AboutPage from './components/AboutPage';
 import EditVibe from './components/EditVibe';
 
 const API_URL = 'https://api.airtable.com/v0/apppfkjVKyYXyDqYM/Table%201?api_key=key5SMVCWBp7tBUcr'
 
 function App() {
   const [vibes, setVibes] = useState([])
-  const [toggleFetch, setToggleFetch] = useState(true)
-  const [Name, SetName] = useState('')
-  const [text, setText] = useState('')
+  const [toggleFetch] = useState(true)
+
 
   useEffect(() => {
     const getVibes = async () => {
@@ -43,7 +42,7 @@ function App() {
 
             ))}
           </div>
-          <AboutPage />
+          {/* <AboutPage /> */}
         </Route>
 
         <Sidebar />
@@ -63,4 +62,4 @@ function App() {
   );
 }
 
-export default App;
+export default App

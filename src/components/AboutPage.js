@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom"
-const AboutPage = () => {
+// import { Link } from "react-router-dom"
+// const AboutPage = () => {
 
-}
+// }
 
-export default AboutPage
+// export default AboutPage
