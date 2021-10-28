@@ -1,6 +1,11 @@
 /* .App {
   margin: 0 auto;
 } */
+
+/* * {
+  box-sizing: border-box;
+} */
+
 .header {
   position: fixed;
   background-color: #F3C19D;
