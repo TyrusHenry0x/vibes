@@ -1,4 +1,6 @@
-
+.App {
+  margin: 0 auto;
+}
 .header {
   position: fixed;
   background-color: #F3C19D;
@@ -59,7 +61,31 @@
 }
 
 .newpage {
-  background-color: red;
+  background: linear-gradient(140deg, whitesmoke, #fcba8a );
   display: flex;
-  
+  margin-top: 70px;
+  margin-left: 250px;
+  height: 100vh;
+  width: 150vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+
+.post {
+  margin-top: 100px;
+  margin-left: 300px;
+}
+.newbox {
+  max-width: 700px;
+  width: 100%;
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
 }

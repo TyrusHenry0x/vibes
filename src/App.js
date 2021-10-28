@@ -5,7 +5,8 @@ import './App.css';
 import NewVibe from './components/NewVibe';
 import Sidebar from './components/Sidebar';
 import Vibes from './components/Vibes';
-
+import AboutPage from './components/AboutPage';
+import EditVibe from './components/EditVibe';
 
 const API_URL = 'https://api.airtable.com/v0/apppfkjVKyYXyDqYM/Table%201?api_key=key5SMVCWBp7tBUcr'
 
@@ -28,30 +29,36 @@ function App() {
   return (
     <div className="App">
 
-      {/* <div className="header"><h1 id="vibes">Vibes</h1></div> */}
+      <div className="header"><h1 id="vibes">Vibes</h1></div>
 
+      <div className="bottom">
 
-      <Route path="/" exact>
+        <Route path="/" exact>
 
-        <div className="homepage">
-          {vibes.map((vibe) => (
-            <Vibes
-              vibe={vibe}
-            />
+          <div className="homepage">
+            {vibes.map((vibe) => (
+              <Vibes
+                vibe={vibe}
+              />
 
-          ))}
-        </div>
+            ))}
+          </div>
+          <AboutPage />
+        </Route>
 
-      </Route>
+        <Sidebar />
 
-      <Route path="/new">
+        <Route path="/new">
+          <NewVibe />
 
-        <NewVibe />
+        </Route >
 
-      </Route >
-
-      <Sidebar />
-
+        <Route path="/edit-vibe/:id">
+          <EditVibe
+            vibes={vibes}
+          />
+        </Route>
+      </div>
     </div >
   );
 }

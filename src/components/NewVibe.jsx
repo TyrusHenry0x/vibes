@@ -25,27 +25,29 @@ const NewVibe = () => {
 
   return (
     <div className="newpage">
-      <form className="newVibe" onSubmit={handleSubmit}>
-        <label htmlFor="Name">User: </label>
-        <input
-          type="text"
-          id="username"
-          placeholder="Name"
-          value={Name}
-          onChange={(ev) => SetName(ev.target.value)}
-        />
-        <label htmlFor="text"></label>
-        <input
-          type="text"
-          id="text"
-          placeholder="Whats the Vibe for today?"
-          value={text}
-          onChange={(ev) => setText(ev.target.value)}
-        />
-        <div className="mood"></div>
+      <div className="newbox">
+        <form className="newVibe" onSubmit={handleSubmit}>
+          <label htmlFor="Name">User: </label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Name"
+            value={Name}
+            onChange={(ev) => SetName(ev.target.value)}
+          />
+          <label htmlFor="text"></label>
+          <input
+            type="text"
+            id="text"
+            placeholder="Whats the Vibe for today?"
+            value={text}
+            onChange={(ev) => setText(ev.target.value)}
+          />
+          {/* <div className="mood"></div> */}
 
-        <input type="submit" value="Vibe" />
-      </form>
+          <input type="submit" value="Vibe" />
+        </form>
+      </div>
     </div>
   )
 }
