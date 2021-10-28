@@ -24,7 +24,7 @@ const NewVibe = () => {
     <div className="formpage">
       <div className="formbox">
         <form className="newVibe" onSubmit={handleSubmit}>
-          <label htmlFor="Name">User: </label>
+          <label htmlFor="Name"> </label>
           <input
             type="text"
             id="username"
