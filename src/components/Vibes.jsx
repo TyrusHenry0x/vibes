@@ -13,8 +13,7 @@ export const Vibes = (props, toggleFetch, setToggleFetch) => {
       <h1><b>{props.vibe.fields.Name}</b></h1>
       <p>{props.vibe.fields.text}</p>
 
-      <Link to={`/edit-vibe/${props.vibe.id}`}>Edit</Link>
-
+      <Link to={`/edit-vibe/${props.vibe.id}`}><button>Edit</button></Link>
     </div>
   )
 }

@@ -20,9 +20,9 @@ const EditVibe = ({ vibes }) => {
   const [text, setText] = useState('')
 
   return (
-    <div className="newpage">
-      <div className="newbox">
-        <form className="newVibe" onSubmit={handleSubmit}>
+    <div className="formpage">
+      <div className="formbox">
+        <form className="editVibe" onSubmit={handleSubmit} autoComplete="off">
           <label htmlFor="text"></label>
           <input
             type="text"
@@ -30,13 +30,13 @@ const EditVibe = ({ vibes }) => {
             placeholder="Edit?"
             value={text}
             onChange={(ev) => setText(ev.target.value)}
-          />
-          {/* <div className="mood"></div> */}
 
-          <input type="submit" value="Vibe" />
+          />
+
+          <input type="submit" value="Confirm" preventdefault />
         </form>
       </div>
-    </div>
+    </div >
 
   )
 }

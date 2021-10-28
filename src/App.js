@@ -7,6 +7,7 @@ import Sidebar from './components/Sidebar';
 import Vibes from './components/Vibes';
 // import AboutPage from './components/AboutPage';
 import EditVibe from './components/EditVibe';
+import AboutPage from './components/AboutPage';
 
 const API_URL = 'https://api.airtable.com/v0/apppfkjVKyYXyDqYM/Table%201?api_key=key5SMVCWBp7tBUcr'
 
@@ -56,6 +57,10 @@ function App() {
           <EditVibe
             vibes={vibes}
           />
+        </Route>
+
+        <Route path="/about">
+          <AboutPage />
         </Route>
       </div>
     </div >

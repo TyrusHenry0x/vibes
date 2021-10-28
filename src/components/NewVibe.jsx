@@ -24,8 +24,8 @@ const NewVibe = () => {
   const [toggleFetch, setToggleFetch] = useState(true)
 
   return (
-    <div className="newpage">
-      <div className="newbox">
+    <div className="formpage">
+      <div className="formbox">
         <form className="newVibe" onSubmit={handleSubmit}>
           <label htmlFor="Name">User: </label>
           <input
