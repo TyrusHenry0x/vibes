@@ -9,6 +9,7 @@ import Vibes from './components/Vibes';
 import EditVibe from './components/EditVibe';
 import AboutPage from './components/AboutPage';
 import Contact from './components/Contact';
+import WbSunnyIcon from '@material-ui/icons/WbSunny';
 
 const API_URL = 'https://api.airtable.com/v0/apppfkjVKyYXyDqYM/Table%201?api_key=key5SMVCWBp7tBUcr'
 
@@ -29,7 +30,7 @@ function App() {
   return (
     <div className="App">
 
-      <div className="header"><h1 id="vibes">Vibes</h1></div>
+      <div className="header"><h1 id="vibes"><i><WbSunnyIcon className="sun-icon" />Vibes</i></h1></div>
 
       <div className="bottom">
 

@@ -24,8 +24,12 @@ body {
   background: linear-gradient(#F3C19D, honeydew);
   padding-bottom: 100vh;
 } */
+
+/* .sun-icon {
+  color: #6cabd8;
+} */
 #vibes {
-  padding-left: 30px;
+  padding-left: 25px;
   padding-bottom: 30px;
   color: white;
 }
@@ -63,8 +67,10 @@ body {
   background-color: #f1d0b7;
 }
 .SidebarList #active {
-  background-color: #fcba8a;
+  background-color: #6cabd8;
 }
+/* #fcba8a; */
+/* #194BA0 */
 .row #icon {
   flex: 30%;
   display: grid;
@@ -131,20 +137,34 @@ input {
 .about {
   /* max-width: 700px;
   width: 100%; */
+  color: white;
   background-color: white;
-  padding: 25px 30px;
-  padding: 10px;
-  background: linear-gradient(140deg, whitesmoke, #fcba8a );
+  padding: 10px 30px;
+  /* background: linear-gradient( #F3C19D, whitesmoke ); */
+  background: linear-gradient( white 1% ,#F3C19D 70%, #6cabd8);
+
   display: flex;
-  margin-top: 70px;
+  flex-direction: column;
+  margin-top: 30px;
   margin-left: 250px;
   height: 100vh;
   width: 100%;
   justify-content: center;
   align-items: center;
   padding: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#about-text {
+  max-width: 600px;
+  display: flex;
+  font-size: 25px;
+}
+
+.wave {
+  height: 30%;
+  width: auto;
+}
 
 .bottom {
   display: flex;
