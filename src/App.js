@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App">
 
-      <div className="header"><h1 id="vibes">Vibes</h1></div>
+      {/* <div className="header"><h1 id="vibes">Vibes</h1></div> */}
 
       <div className="bottom">
 
