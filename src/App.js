@@ -6,7 +6,6 @@ import NewVibe from './components/NewVibe';
 import Sidebar from './components/Sidebar';
 import Vibes from './components/Vibes';
 // import AboutPage from './components/AboutPage';
-import EditVibe from './components/EditVibe';
 import AboutPage from './components/AboutPage';
 import Contact from './components/Contact';
 import WbSunnyIcon from '@material-ui/icons/WbSunny';
@@ -54,12 +53,6 @@ function App() {
           <NewVibe />
 
         </Route >
-
-        <Route path="/edit-vibe/:id">
-          <EditVibe
-            vibes={vibes}
-          />
-        </Route>
 
         <Route path="/about">
           <AboutPage />

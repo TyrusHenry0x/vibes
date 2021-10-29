@@ -1,5 +1,3 @@
-import { Link } from "@material-ui/core"
-
 const AboutPage = () => {
 
   return (

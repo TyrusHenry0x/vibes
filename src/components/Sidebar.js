@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import SideBarData from './SidebarData';
 
 
@@ -9,7 +8,7 @@ const Sidebar = () => {
       <ul className='SidebarList'>
         {SideBarData.map((val, key) => {
           return (
-            <Link key={key}
+            <li key={key}
               className="row"
               id={window.location.pathname === val.link ? "active" : ""}
               onClick={() => {
@@ -17,7 +16,7 @@ const Sidebar = () => {
               }}
             >
               <div id="icon">{val.icon}</div> <div id="title">{val.title}</div>
-            </Link>
+            </li>
           )
         })}
       </ul>
