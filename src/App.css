@@ -94,7 +94,6 @@ body {
   padding: 10px;
 }
 
-
 .post {
   
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -198,8 +197,8 @@ input {
 #githubi , #linkedini {
   padding: 10px;
   color: white;
+  height: 20px;
 }
-
 
 .bottom {
   background: linear-gradient(  peachpuff 60%, #6cabd8); 
