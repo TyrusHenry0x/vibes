@@ -99,15 +99,14 @@ body {
   
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-top: 20px;
-  margin-left: 50vh;
+  margin-left: 60px;
   padding: 10px;
   padding-left: 2%;
   border: 2px solid white;
   border-radius: 5px;
   color: white;
-  max-width: 700px;
-  
-  width: 30%;
+  width: 50vh;
+
   background-color: #6cabd8;
 }
 .formbox {
@@ -194,15 +193,11 @@ input {
 }
 
 .homepage {
-  margin-top: 50px;
-  margin-left: 175px;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
-
-/* .postBox {
-  
-} */
 
 @media screen and (max-width: 501px) {
   .Sidebar {
