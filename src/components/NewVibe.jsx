@@ -41,7 +41,6 @@ const NewVibe = () => {
             value={text}
             onChange={(ev) => setText(ev.target.value)}
           />
-          {/* <div className="mood"></div> */}
 
           <input type="submit" value="Vibe" className="vibebutton" />
         </form>
