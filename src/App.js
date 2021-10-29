@@ -65,11 +65,13 @@ function App() {
           <AboutPage />
         </Route>
 
-        <Route path="/support">
-          <Contact />
-        </Route>
 
       </div>
+      <Route path="/support">
+        <div className="support">
+          <Contact />
+        </div>
+      </Route>
     </div >
   );
 }

@@ -1,12 +1,11 @@
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import EmailIcon from '@material-ui/icons/Email';
 
 const Contact = () => {
 
   return (
     <div className="contactform">
-      <h1>Get in touch</h1>
+      <h1 className="contacthead">Get in touch</h1>
       <p>Email: tyrushenry03@gmail.com</p>
       <a href="https://github.com/TyrusHenry0x/">
         <GitHubIcon />
