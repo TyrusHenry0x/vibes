@@ -283,6 +283,12 @@ input {
     color: transparent;
   }
 
+  .formpage, .about, .contactform {
+    margin: 0 auto;
+  }
+
+  
+
   .SidebarList .row {
     justify-content: space-between;
     display: flex;
