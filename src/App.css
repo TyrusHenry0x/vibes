@@ -189,6 +189,18 @@ input {
 .contacthead {
   font-size: 50px;
 }
+
+.links-out {
+  transform: scale(1.8);
+  color: white;
+}
+
+#githubi , #linkedini {
+  padding: 10px;
+  color: white;
+}
+
+
 .bottom {
   background: linear-gradient(  peachpuff 60%, #6cabd8); 
   display: flex;

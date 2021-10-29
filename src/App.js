@@ -64,8 +64,6 @@ function App() {
         <Route path="/about">
           <AboutPage />
         </Route>
-
-
       </div>
       <Route path="/support">
         <div className="support">
