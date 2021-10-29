@@ -94,6 +94,7 @@ body {
   padding: 10px;
 }
 
+
 .post {
   
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -178,6 +179,7 @@ input {
   max-width: 600px;
   display: flex;
   font-size: 25px;
+  text-align: center;
 }
 
 .wave {
@@ -200,6 +202,7 @@ input {
   height: 20px;
 }
 
+
 .bottom {
   background: linear-gradient(  peachpuff 60%, #6cabd8); 
   display: flex;
@@ -207,7 +210,8 @@ input {
 }
 
 .homepage {
-  height: 100%;
+  margin-top: 80px;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
