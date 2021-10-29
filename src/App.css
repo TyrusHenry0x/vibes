@@ -5,7 +5,9 @@
 /* * {
   box-sizing: border-box;
 } */
+
 body {
+  background: linear-gradient(  #eeb58b  ,#F3C19D 70%, #6cabd8); 
   border: none;
   margin: 0px;
   padding: 0;
@@ -83,7 +85,7 @@ body {
 }
 
 .formpage {
-  background: linear-gradient(  #eeb58b  ,#F3C19D 70%, #6cabd8); 
+  
   display: flex;
   margin-top: 70px;
   margin-left: 250px;
@@ -207,11 +209,13 @@ input {
   background: linear-gradient(  peachpuff 60%, #6cabd8); 
   display: flex;
   flex-direction: row;
+  background-attachment: fixed;
+
 }
 
 .homepage {
   margin-top: 80px;
-  height: 100vh;
+  height: 1000px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -263,6 +267,16 @@ input {
   .row {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .homepage {
+    height: 1200px;
+    width: 375px;
+  }
+
+  .post {
+  width: 300px;
+  margin: 20px 0 0 0;
   }
 
   #title {
