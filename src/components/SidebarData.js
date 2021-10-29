@@ -28,5 +28,3 @@ const SideBarData = [
 ]
 
 export default SideBarData
-
-// '@mui/icons-material/Home'
