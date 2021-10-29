@@ -23,6 +23,7 @@ const NewVibe = () => {
   return (
     <div className="formpage">
       <div className="formbox">
+        <h1 className="newvibetitle">New Vibe</h1>
         <form className="newVibe" onSubmit={handleSubmit}>
           <label htmlFor="Name"> </label>
           <input
@@ -42,7 +43,7 @@ const NewVibe = () => {
           />
           {/* <div className="mood"></div> */}
 
-          <input type="submit" value="Vibe" />
+          <input type="submit" value="Vibe" className="vibebutton" onSubmit="form.reset()" />
         </form>
       </div>
     </div>

@@ -82,7 +82,7 @@ body {
 }
 
 .formpage {
-  background: linear-gradient(140deg, whitesmoke, #fcba8a );
+  background: linear-gradient(  #eeb58b  ,#F3C19D 70%, #6cabd8); 
   display: flex;
   margin-top: 70px;
   margin-left: 250px;
@@ -109,6 +109,14 @@ body {
   border-radius: 5px;
   align-items: center;
   justify-content: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.newvibetitle {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  font-size: 45px;
+  color: #eeb58b;
 }
 
 .newVibe {
@@ -117,8 +125,7 @@ body {
   justify-content: center;
   width: 50%;
   margin-left: 25%;
-  margin-bottom: 20%;
-  margin-top: 20%;
+  margin-bottom: 10%;
 }
 
 #username, #text {
@@ -133,6 +140,12 @@ body {
 input {
   padding: 10px;
 }
+.vibebutton {
+  max-width: 100px;
+  min-width: 50px;
+  margin-left: 35%;
+  margin-right: 35%;
+}
 
 .about {
   /* max-width: 700px;
@@ -141,8 +154,7 @@ input {
   background-color: white;
   padding: 10px 30px;
   /* background: linear-gradient( #F3C19D, whitesmoke ); */
-  background: linear-gradient( white 1% ,#F3C19D 70%, #6cabd8);
-
+  background: linear-gradient(  #eeb58b  ,#F3C19D 70%, #6cabd8);
   display: flex;
   flex-direction: column;
   margin-top: 30px;
