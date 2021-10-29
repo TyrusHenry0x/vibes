@@ -96,11 +96,19 @@ body {
 
 
 .post {
+  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-top: 20px;
-  margin-left: 50vw;
+  margin-left: 50vh;
   padding: 10px;
-  border: 1px solid black;
-  border-radius: 4px;
+  padding-left: 2%;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  max-width: 700px;
+  
+  width: 30%;
+  background-color: #6cabd8;
 }
 .formbox {
   max-width: 700px;
@@ -175,18 +183,26 @@ input {
 }
 
 .wave {
-  height: 30%;
+  height: 20%;
   width: auto;
 }
 
 .bottom {
+  background: linear-gradient(  peachpuff 60%, #6cabd8); 
   display: flex;
   flex-direction: row;
 }
 
 .homepage {
   margin-top: 50px;
+  margin-left: 175px;
+  display: flex;
+  justify-content: center;
 }
+
+/* .postBox {
+  
+} */
 
 @media screen and (max-width: 501px) {
   .Sidebar {

@@ -37,12 +37,14 @@ function App() {
         <Route path="/" exact>
 
           <div className="homepage">
-            {vibes.map((vibe) => (
-              <Vibes
-                vibe={vibe}
-              />
+            <div className="postBox">
+              {vibes.map((vibe) => (
+                <Vibes
+                  vibe={vibe}
+                />
 
-            ))}
+              ))}
+            </div>
           </div>
         </Route>
 
