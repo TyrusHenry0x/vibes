@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import axios from "axios"
 
 const NewVibe = () => {
@@ -24,7 +24,7 @@ const NewVibe = () => {
     <div className="formpage">
       <div className="formbox">
         <h1 className="newvibetitle">New Vibe</h1>
-        <form className="newVibe" onSubmit={handleSubmit}>
+        <form className="newVibe" onSubmit={handleSubmit} autoComplete="off">
           <label htmlFor="Name"> </label>
           <input
             type="text"
@@ -43,7 +43,7 @@ const NewVibe = () => {
           />
           {/* <div className="mood"></div> */}
 
-          <input type="submit" value="Vibe" className="vibebutton" onSubmit="form.reset()" />
+          <input type="submit" value="Vibe" className="vibebutton" />
         </form>
       </div>
     </div>
