@@ -1,3 +1,4 @@
+import React from "react"
 import { useState } from "react"
 import axios from "axios"
 
@@ -5,6 +6,7 @@ const NewVibe = () => {
 
   const handleSubmit = async (ev) => {
     ev.preventDefault()
+    ev.target.reset()
 
     const newVibe = {
       fields: {
