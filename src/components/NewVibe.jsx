@@ -1,8 +1,14 @@
 import React from "react"
 import { useState } from "react"
 import axios from "axios"
+import { useHistory } from "react-router-dom"
+import Popup from "./Popup"
 
-const NewVibe = () => {
+const NewVibe = ({toggleFetch, setToggleFetch}) => {
+  const [Name, SetName] = useState('');
+  const [text, setText] = useState('');
+  // const [toggleFetch, setToggleFetch] = useState(true);
+  const history = useHistory();
 
   const handleSubmit = async (ev) => {
     ev.preventDefault()
@@ -16,11 +22,12 @@ const NewVibe = () => {
     }
 
     await axios.post('https://api.airtable.com/v0/apppfkjVKyYXyDqYM/Table%201?api_key=key5SMVCWBp7tBUcr', newVibe)
-    setToggleFetch(!toggleFetch)
+
+    history.push("/")
+    setToggleFetch(!toggleFetch);
   }
-  const [Name, SetName] = useState('')
-  const [text, setText] = useState('')
-  const [toggleFetch, setToggleFetch] = useState(true)
+
+
 
   return (
     <div className="formpage">
@@ -43,8 +50,7 @@ const NewVibe = () => {
             value={text}
             onChange={(ev) => setText(ev.target.value)}
           />
-
-          <input type="submit" value="Vibe" className="vibebutton" />
+          <input type="submit" value="vibe" className="vibebutton" />
         </form>
       </div>
     </div>

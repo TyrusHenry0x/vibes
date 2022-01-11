@@ -13,7 +13,7 @@ const API_URL = 'https://api.airtable.com/v0/apppfkjVKyYXyDqYM/Table%201?api_key
 
 function App() {
   const [vibes, setVibes] = useState([])
-  const [toggleFetch] = useState(true)
+  const [toggleFetch, setToggleFetch] = useState(true)
 
   useEffect(() => {
     const getVibes = async () => {
@@ -40,7 +40,10 @@ function App() {
         </Route>
         <Sidebar />
         <Route path="/new">
-          <NewVibe />
+          <NewVibe
+          toggleFetch={toggleFetch}
+          setToggleFetch={setToggleFetch}
+          />
         </Route >
         <Route path="/about">
           <AboutPage />

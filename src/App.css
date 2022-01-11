@@ -40,9 +40,9 @@ body {
   list-style-type: none;
   margin: 0%;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   color: white;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-decoration: none;
@@ -68,7 +68,6 @@ body {
 }
 
 .formpage {
-  
   display: flex;
   margin-top: 70px;
   margin-left: 250px;
@@ -274,4 +273,43 @@ input {
     display: flex;
     flex-direction: inline;
   }
+}
+
+.popup-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.box {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+
+.close-icon {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  right: calc(15% - 30px);
+  top: calc(100vh - 85vh - 33px);
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
 }
